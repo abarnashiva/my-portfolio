@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@theme {
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Manrope", system-ui, sans-serif;
+  --color-ink: #060606;
+  --color-film: #e9e6df;
+  --color-dim: #8c919c;
+  --color-gold: #d6a85c;
+  --color-ember: #8c5a2b;
+  --color-teal: #5fb7b0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--color-ink);
+  color: var(--color-film);
+  font-family: var(--font-sans);
+}
+::selection {
+  background: var(--color-gold);
+  color: var(--color-ink);
+}
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 4px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+.grain::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.06;
+  z-index: 50;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
