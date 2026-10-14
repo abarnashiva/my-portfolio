@@ -33,7 +33,11 @@ export default function Contact() {
           >
             LinkedIn
           </a>
-          <a className={btn} href="/resume.pdf" download>
+          <a
+            href="/Abarna_K_Software_Developer_Resume_Oct_2026.pdf"
+            download="Abarna_K_Software_Developer_Resume_Oct_2026.pdf"
+            className={btn}
+          >
             Download resume
           </a>
         </div>

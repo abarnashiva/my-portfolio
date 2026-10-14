@@ -148,8 +148,8 @@ export default function Hero() {
                 View work
               </a>
               <a
-                href="/resume.pdf"
-                download
+                href="/Abarna_K_Software_Developer_Resume_Oct_2026.pdf"
+                download="Abarna_K_Software_Developer_Resume_Oct_2026.pdf"
                 className="rounded-full border border-white/20 px-7 py-3 text-film/80 transition-colors hover:border-film"
               >
                 Download resume

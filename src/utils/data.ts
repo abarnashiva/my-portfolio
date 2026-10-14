@@ -136,8 +136,8 @@ export const projects = [
   {
     title: "Praxio web application",
     type: "Company web app",
-    url: "",
-    host: "",
+    url: "https://praxio.in/",
+    host: "praxio.in",
     image: praxio,
     text: "Architected and deployed the official Praxio web app with continuous delivery on Vercel, backed by Node.js micro-services and PostgreSQL data pipelines.",
     tech: [
